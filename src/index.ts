@@ -15,24 +15,24 @@ async function scrap(): Promise<void> {
 
   console.log('Scrapping 0 to 100 movies...');
   allMovies.push(...await imdb.scrap(`${link}`));
-  // console.log('Scrapping 101 to 200 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=101&ref_=adv_nxt`));
-  // console.log('Scrapping 201 to 300 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=201&ref_=adv_nxt`));
-  // console.log('Scrapping 301 to 400 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=301&ref_=adv_nxt`));
-  // console.log('Scrapping 401 to 500 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=401&ref_=adv_nxt`));
-  // console.log('Scrapping 501 to 600 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=501&ref_=adv_nxt`));
-  // console.log('Scrapping 601 to 700 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=601&ref_=adv_nxt`));
-  // console.log('Scrapping 701 to 800 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=701&ref_=adv_nxt`));
-  // console.log('Scrapping 801 to 900 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=801&ref_=adv_nxt`));
-  // console.log('Scrapping 901 to 1000 movies...');
-  // allMovies.push(...await imdb.scrap(`${link}&start=901&ref_=adv_nxt`));
+  console.log('Scrapping 101 to 200 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=101&ref_=adv_nxt`));
+  console.log('Scrapping 201 to 300 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=201&ref_=adv_nxt`));
+  console.log('Scrapping 301 to 400 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=301&ref_=adv_nxt`));
+  console.log('Scrapping 401 to 500 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=401&ref_=adv_nxt`));
+  console.log('Scrapping 501 to 600 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=501&ref_=adv_nxt`));
+  console.log('Scrapping 601 to 700 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=601&ref_=adv_nxt`));
+  console.log('Scrapping 701 to 800 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=701&ref_=adv_nxt`));
+  console.log('Scrapping 801 to 900 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=801&ref_=adv_nxt`));
+  console.log('Scrapping 901 to 1000 movies...');
+  allMovies.push(...await imdb.scrap(`${link}&start=901&ref_=adv_nxt`));
 
   await puppeteer.browser.close();
 
